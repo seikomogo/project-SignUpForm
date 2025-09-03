@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link rel="stylesheet" href="styles.css">
-
-
-    <div class="header">
-        <h1>Not a real online service, just testing the functionality of a home-made sign up form</h1>
-        <h2>Sign up <em>now</em> to get started.</h2>
-        <br><br>
+  <div class="center-card">
+    <div class="card-image"></div>
+    <div class="card-form">
+      <h2>Complete form below to sign up.</h2>
+      <form action="submit_form.php" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <button type="submit">Create Account</button>
+        <div class="login-link">
+          Already have an account? <a href="login.html">Log in</a>
+        </div>
+      </form>
     </div>
-
-
-    <div class="container">
-        <h2>Complete form below to sign up.</h2>
-        <form action="submit_form.php" method="POST">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-            <br><br>
-            <input type="createAccount" value="Create Account">
-            <br><br>
-            <label for="login">Already have an account? <a href="login.html">Log in</a></label>
-        </form>
-    </div>
+  </div>
 </body>
 </html>
