@@ -7,8 +7,17 @@
 </head>
 <body>
     <link rel="stylesheet" href="styles.css">
+
+
+    <div class="header">
+        <h1>Not a real online service, just testing the functionality of a home-made sign up form</h1>
+        <h2>Sign up <em>now</em> to get started.</h2>
+        <br><br>
+    </div>
+
+
     <div class="container">
-        <h2>Sign-Up</h2>
+        <h2>Complete form below to sign up.</h2>
         <form action="submit_form.php" method="POST">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required>
@@ -25,7 +34,9 @@
             <label for="confirmPassword">Confirm Password:</label>
             <input type="password" id="confirmPassword" name="confirmPassword" required>
             <br><br>
-            <input type="submit" value="Sign Up">
+            <input type="createAccount" value="Create Account">
+            <br><br>
+            <label for="login">Already have an account? <a href="login.html">Log in</a></label>
         </form>
     </div>
 </body>
